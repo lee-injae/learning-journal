@@ -12,7 +12,7 @@ h2 {
     margin: 0;
 }
 
-h3 {
+h1, h3 {
     margin:0;
 }
 
@@ -75,18 +75,23 @@ header {
 .article-post{
     margin: 2em auto;
     padding: 0 1em;
-
-    /* border: blue 2px solid; */
-
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 .article-date,  
-.article-preview {
+.article-preview,
+.profile-img-container {
     margin-top: 1em;
 }
 
 .article-title {
     margin-top: 0.5em;
+}
+
+.about-me-intro {
+    padding-right: 2.5em;
 }
 
 main {
@@ -115,6 +120,12 @@ footer {
     /* object-fit: contain; */
     /* object-fit: fill; */
     /* height: 230px; */
+}
+
+.profile-img{
+    border-radius: 50%;
+    width: 40%;
+    padding-left: 1em;
 }
 
 
@@ -146,4 +157,8 @@ footer {
 
 .center {
     text-align: center;
+}
+
+.mb-0 {
+    margin-bottom: 0;
 }
