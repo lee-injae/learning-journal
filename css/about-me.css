@@ -1,0 +1,157 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000000;
+}
+
+/* Typography */
+
+h2 {
+    font-size: 2rem;
+    line-height: 1.08;
+    margin: 0;
+}
+
+h1, h3, p {
+    margin:0;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+footer a {
+    text-decoration: underline;
+}
+
+/* Image */
+
+.logo-img {
+    width: 7vw;
+    border-radius: 50%;
+}
+
+.article-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    /* object-fit: contain; */
+    /* object-fit: fill; */
+    /* height: 230px; */
+}
+
+.profile-img{
+    border-radius: 50%;
+    width: 40%;
+    padding-left: 1em;
+}
+
+/* Layout */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    /* border: red 2px solid; */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap:0.2em;
+}
+
+.nav-menu {
+    display: flex;
+    gap:1.5em;
+}
+
+.container {
+    width: 90%;
+    max-width: ;
+    padding-top: 1.5em;
+    margin: 0 auto;
+}
+
+.article-title-hero {
+    padding-right: 4em;
+}
+
+.hero-post {
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 4em 1em 1em 1em;
+    gap: 1em;
+}
+
+.container {
+    width: 90%;
+    max-width: ;
+    padding-top: 1.5em;
+    margin: 0 auto;
+}
+
+.article-post {
+    margin-bottom: 3rem;
+}
+
+.article-date,  
+.article-preview,
+.profile-img-container, 
+.about-me-intro {
+    margin-top: 1em;
+}
+
+.article-title {
+    margin-top: 0.5em;
+}
+
+.about-me-intro {
+    padding-right: 2.5em;
+    margin-bottom: 1em;
+}
+
+/* Media QUERIES */
+
+/* @media (min-width: ) */
+
+
+/* utility */
+
+.bold {
+    font-weight: 700;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.font-negative-color {
+    color: #ffffff;
+}
+
+.background-none {
+    background: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
