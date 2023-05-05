@@ -6,6 +6,7 @@ body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
     color: #000000;
+    /* border: blue 3px solid; */
 }
 
 /* Typography */
@@ -20,6 +21,10 @@ h1, h3, p {
     margin:0;
 }
 
+p {
+    line-height: 1.5;
+}
+
 a {
     color: #000000;
     text-decoration: none;
@@ -31,20 +36,23 @@ footer a {
     text-decoration: underline;
 }
 
+.hero-post {
+    /* text-shadow: 0 0 5px #b7b7b7, 0 0 10px #b7b7b7, 0 0 20px #b7b7b7, 0 0 40px #b7b7b7, 0 0 80px #b7b7b7, 0 0 160px #b7b7b7; */
+    /* text-shadow: 3px 3px 0 #000; */
+    text-shadow: 0 2px #816fca ;
+}
+
 /* Image */
 
 .logo-img {
     width: 7vw;
+    max-width: 35px;
     border-radius: 50%;
 }
 
 .article-img {
     width: 100%;
-    height: 250px;
     object-fit: cover;
-    /* object-fit: contain; */
-    /* object-fit: fill; */
-    /* height: 230px; */
 }
 
 .profile-img{
@@ -55,8 +63,11 @@ footer a {
 
 /* Layout */
 
-header {
+header, .logo-container, .nav-menu, .hero-post {
     display: flex;
+}
+
+header {
     justify-content: space-between;
     align-items: center;
     padding: 1em 2em;
@@ -64,19 +75,17 @@ header {
 }
 
 .logo-container {
-    display: flex;
     align-items: center;
     gap:0.2em;
 }
 
 .nav-menu {
-    display: flex;
     gap:1.5em;
 }
 
 .container {
     width: 90%;
-    max-width: ;
+    /* max-width: ; */
     padding-top: 1.5em;
     margin: 0 auto;
 }
@@ -88,17 +97,10 @@ header {
 .hero-post {
     background-image: url("../images/hero.jpg");
     background-size: cover;
-    display: flex;
     flex-direction: column;
     padding: 4em 1em 1em 1em;
     gap: 1em;
-}
-
-.container {
-    width: 90%;
-    max-width: ;
-    padding-top: 1.5em;
-    margin: 0 auto;
+    min-height: 285px;
 }
 
 .article-post{
@@ -117,14 +119,55 @@ header {
 
 footer {
     text-align: center;
-    /* border: pink 2px solid; */
     padding-bottom: 2em;
 }
 
 /* Media QUERIES */
 
-@media (min-width: )
+@media (min-width: 480px){
+    .hero-post {
+        background-size: cover;
+        height: 35%;
+    }
 
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        /* border: 3px solid black; */
+        gap: 1em;
+        width: 94%
+    }
+
+    .article-post {
+        flex-basis: 40%;
+        flex-grow: 1;
+    }
+}
+
+@media (min-width: 768px){
+    .article-post {
+        flex-basis: 30%;
+        flex-grow: 1;
+    }
+    .hero-post {
+        padding-top: 8em;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+        line-height: 1.2;
+        margin: 0;
+    }
+    
+    h1, h3, p {
+        margin:0;
+    }
+    
+    p {
+        line-height: 1.5;
+        font-size: 1.25rem;
+    }
+}
 
 /* utility */
 
