@@ -82,14 +82,51 @@ header {
     margin: 0 auto;
 }
 
-.hero-post-full > p, .hero-post-full > img, .hero-post-full > div, .hero-post-full > h2,
+.hero-post-full > p, .hero-post-full > img,
 .article-date,  
 .article-preview,
 .profile-img-container {
     margin-top: 1em;
 }
 
+.article-title-hero {
+    margin-top: 0.5em;
+}
+
 .article-post{
     margin-bottom: 3rem;
 }
 
+/* MEDIEA QUERIES */
+
+
+
+/* utility */
+
+.bold {
+    font-weight: 700;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.font-negative-color {
+    color: #ffffff;
+}
+
+.background-none {
+    background: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
