@@ -36,6 +36,7 @@ a {
 
 .logo-img {
     width: 7vw;
+    max-width: 35px;
     border-radius: 50%;
 }
 
@@ -52,6 +53,12 @@ a {
     border-radius: 50%;
     width: 40%;
     padding-left: 1em;
+}
+
+.hero-article-img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
 }
 
 /* Layout */
@@ -99,12 +106,29 @@ header {
 
 /* MEDIEA QUERIES */
 
+@media (min-width: 480px){
+    .hero-post-full > :not(.hero-article-img)  {
+        width: 85%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .article-posts {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1em
+    }
+}
 
 
 /* utility */
 
 .bold {
     font-weight: 700;
+}
+
+.font-fiftypercent-increase {
+    font-size: 1.5rem;
 }
 
 .uppercase {
