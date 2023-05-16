@@ -6,6 +6,11 @@ body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
     color: #000000;
+    background-color: #fafafa;
+}
+
+header {
+    background-color: #ffffff;
 }
 
 /* Typography */

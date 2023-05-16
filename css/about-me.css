@@ -6,6 +6,11 @@ body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
     color: #000000;
+    background-color: #fafafa;
+}
+
+header {
+    background-color: #ffffff;
 }
 
 /* Typography */
@@ -31,14 +36,17 @@ a {
     cursor: pointer;
 }
 
-footer a {
-    text-decoration: underline;
+.about-me {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
+
 
 /* Image */
 
 .logo-img {
     width: 7vw;
+    max-width: 38px;
     border-radius: 50%;
 }
 
@@ -53,7 +61,8 @@ footer a {
 
 .profile-img{
     border-radius: 50%;
-    width: 40%;
+    width: 50%;
+    max-width: 230px;
     padding-left: 1em;
 }
 
@@ -80,9 +89,20 @@ header {
 
 .container {
     width: 90%;
-    max-width: ;
     padding-top: 1.5em;
     margin: 0 auto;
+}
+
+.about-me-title {
+    padding-right: 2.5em;
+    margin: 0.7em 0;
+}
+
+.article-body{
+    display: flex;
+    margin-top: 2em;
+    flex-direction: column;
+    gap: 1em;
 }
 
 .article-title-hero {
@@ -98,36 +118,76 @@ header {
     gap: 1em;
 }
 
-.container {
-    width: 90%;
-    max-width: ;
-    padding-top: 1.5em;
-    margin: 0 auto;
-}
-
 .article-post {
     margin-bottom: 3rem;
-}
-
-.article-date,  
-.article-preview,
-.profile-img-container, 
-.about-me-intro {
-    margin-top: 1em;
 }
 
 .article-title {
     margin-top: 0.5em;
 }
 
-.about-me-intro {
-    padding-right: 2.5em;
-    margin-bottom: 1em;
-}
-
 /* Media QUERIES */
 
-/* @media (min-width: ) */
+@media (min-width: 480px) {
+    .article-posts {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1em;
+    }
+}
+
+@media (min-width: 768px) {
+    .about-me {
+        position: relative;
+        bottom: 200px;
+        max-width: 1000px;
+        width: 90%;
+        padding-left: 6em; 
+    }
+
+    .about-me-title  {
+        padding-left: 7em;
+    }
+
+    .about-me-sub {
+        padding-left: 11em;
+    }
+
+    .article-body {
+        margin-top: 3em;
+    }
+
+    h4, .article-posts {
+        position: relative;
+        bottom: 200px;
+    }
+
+}
+
+@media (min-width: 1024px){
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .about-me {
+        max-width: 1000px;
+        width: 90%;
+        padding-left: 6em; 
+    }
+
+    .about-me-title  {
+        padding-left: 5.5em;
+    }
+
+    .about-me-sub {
+        padding-left: 11em;
+    }
+
+    .article-body {
+        margin-top: 5em;
+    }
+}
 
 
 /* utility */
@@ -158,4 +218,8 @@ header {
 
 .mb-0 {
     margin-bottom: 0;
+}
+
+.font-fiftypercent-increase {
+    font-size: 1.5rem;
 }

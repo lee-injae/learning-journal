@@ -96,25 +96,6 @@ header {
     min-height: 285px;
 }
 
-/* .container {
-    width: 90%;
-    padding-top: 1.5em;
-    margin: 0 auto;
-} */
-
-/* .article-post{
-    margin-bottom: 3rem;
-}
-
-.article-date,  
-.article-preview,
-.profile-img-container {
-    margin-top: 1em;
-}
-
-.article-title {
-    margin-top: 0.5em;
-} */
 
 .article-post1, .article-post2, .article-post3, 
 .article-post4, .article-post5, .article-post6  {
@@ -186,7 +167,7 @@ footer {
 
 @media (min-width: 480px){
     .hero-post {
-        height: 35%;
+        height: 35vh;
         justify-content: end;
     }
 
@@ -253,7 +234,7 @@ footer {
 
 @media(min-width: 768px) {
     .hero-post {
-        height: 35vh;
+        min-height: 45vh;
     }
     
     .container {
